@@ -1,0 +1,10 @@
+all:
+  hosts:
+  children:
+    ubuntu:
+
+ubuntu:
+  hosts:
+    51.250.85.233
+  vars:
+    ansible_user: ubuntu

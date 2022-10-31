@@ -1,0 +1,7 @@
+---
+- name: Get hostvars
+  hosts: ubuntu
+  become: yes
+  tasks:
+    - debug:
+        var=hostvars[inventory_hostname]
